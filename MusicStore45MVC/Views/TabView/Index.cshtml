@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="@Url.Content("https://code.jquery.com/ui/1.12.0-beta.1/themes/smoothness/jquery-ui.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.10.2.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.11.4.min.js")" type="text/javascript"></script>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" />
+        
+  @*<script type="text/javascript">
+      $(document).ready(function () {
+        $("#tabs").tabs();
+    });
+    </script>*@
+    <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+    </script>
+
+</head>
+
+<body>
+    <div id="tabs">      
+        <ul>
+            <li><a href="#tabs1">Tab 1</a></li>
+            <li><a href="#tabs2">Tab 2</a></li>
+            <li><a href="#tabs3">Tab 3</a></li>
+        </ul>
+
+        <div id="tabs1">
+            Content for Tab 1 goes here.<br />
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </div>
+
+        <div id="tabs2">
+            Content for Tab 2 goes here.<br />
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </div>
+
+        <div id="tabs3" >
+            Content for Tab 3 goes here.<br />
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </div> 
+    </div>
+
+</body>
+</html>
